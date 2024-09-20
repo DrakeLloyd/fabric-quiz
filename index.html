@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Fabric Quiz</title>
+  <!-- Link to the CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header section with logo and title -->
+  <div id="header">
+    <a href="https://www.bulkapparel.com" target="_blank">
+      <img src="images/bulkapparel-logo.png" alt="BulkApparel Logo">
+    </a>
+    <h1 style="color: #0a2972;">T-Shirt Fabric Quiz</h1>
+  </div>
+
+  <!-- The main container for the quiz -->
+  <div id="quiz-container">
+    <!-- The question will be displayed here -->
+    <div id="question-container"></div>
+    <!-- The answers will be displayed as buttons here -->
+    <div id="answers-container"></div>
+  </div>
+
+  <!-- Progress bar and question count -->
+  <div id="progress-container">
+    <div id="progress-bar-outline">
+      <div id="progress-bar-fill"></div>
+    </div>
+    <div id="question-count"></div>
+  </div>
+
+  <!-- This section will show the result after the quiz is completed -->
+  <div id="result-container" style="display: none;">
+    <div id="fabric-recommendation"></div>
+
+    <!-- Two columns for Men's and Women's results -->
+    <div id="result-columns" style="display: flex; justify-content: space-between;">
+      <div id="mens-result" class="result-column"></div>
+      <div id="womens-result" class="result-column"></div>
+    </div>
+  </div>
+
+  <!-- Link to the JavaScript file for the quiz logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>

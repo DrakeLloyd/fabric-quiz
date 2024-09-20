@@ -1,0 +1,187 @@
+/* -------------------------------------
+   Basic Page Styling 
+-------------------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255,255,255);
+  margin: 0;
+  padding: 20px;
+}
+
+/* -------------------------------------
+   Header Styling (Logo and Title)
+-------------------------------------- */
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the title horizontally */
+  margin-bottom: 20px;
+}
+
+#header a {
+  align-self: flex-start; /* Align the logo to the left */
+}
+
+#header img {
+  height: 50px; /* Adjust the size of the logo */
+  margin-left: 20px; /* Add margin for spacing from the left */
+}
+
+#header h1 {
+  text-align: center; /* Center the title below the logo */
+  margin-top: 50px;
+  font-size: 35px;
+  color: #0a2972;
+}
+
+/* -------------------------------------
+   Quiz and Result Container Styling
+-------------------------------------- */
+#quiz-container,
+#result-container {
+  margin-top: 25px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Larger shadow */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* Left-align the content */
+}
+
+/* -------------------------------------
+   Question Styling
+-------------------------------------- */
+#question-container {
+  text-align: left; /* Ensure the question text is aligned to the left */
+  padding-left: 20px; /* Optional: Add some padding to match the buttons */
+}
+
+#question-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Space between the question and answers */
+}
+
+/* -------------------------------------
+   Answer Buttons Styling
+-------------------------------------- */
+#answers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.answer-button {
+  width: 47%;
+  height: 75px;
+  padding: 10px;
+  background-color: #0a2972;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  margin: 8px; /* Add margin around the buttons */
+}
+
+.answer-button:hover {
+  background-color: #007aff; /* Darker shade on hover */
+}
+
+/* -------------------------------------
+   Progress Bar and Question Count Styling
+-------------------------------------- */
+#progress-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Space between the question and progress bar */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#progress-bar-outline {
+  width: 75%;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #0a2972;
+  border-radius: 10px;
+  margin-right: 20px; /* Space between progress bar and question count */
+  position: relative;
+  overflow: hidden; /* Ensures the fill doesn't overflow the outline */
+}
+
+#progress-bar-fill {
+  width: 0%; /* Start at 0% and dynamically increase */
+  height: 100%;
+  background-color: #0a2972;
+  border-radius: 8px;
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+#question-count {
+  text-align: right;
+  font-size: 18px;
+  color: #333;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+/* -------------------------------------
+   Result Section Styling
+-------------------------------------- */
+#result-container {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+/* Fabric link styling inside the recommendation */
+#fabric-recommendation a {
+  text-decoration: none; /* Remove underline */
+  color: #0a2972; /* Set the link color */
+}
+
+#fabric-recommendation a:hover {
+  color: #007aff; /* Optional: Change color on hover */
+}
+
+/* Image Container */
+#image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.result-column img {
+  width: 285px;
+  height: auto;
+}
+
+/* Ensure the men's and women's results are displayed side by side */
+#result-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between the two columns */
+  margin-top: 35px;
+}
+
+/* Add styles for the fabric description inside the result-container */
+#result-container .fabric-description {
+  text-indent: 25px; /* Indent the first line of the paragraph */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* -------------------------------------
+   Linked Text Styling (T-shirt Titles)
+-------------------------------------- */
+.result-column a {
+  text-decoration: none; /* Remove the underline */
+  color: #0a2972; /* Set the link color */
+}
+
+.result-column a:hover {
+  color: #007aff; /* Optional: Change color on hover */
+}
